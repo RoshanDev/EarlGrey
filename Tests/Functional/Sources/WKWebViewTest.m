@@ -64,6 +64,7 @@
   [[EarlGrey selectElementWithMatcher:grey_buttonTitle(@"Local")] performAction:grey_tap()];
   [[EarlGrey selectElementWithMatcher:grey_kindOfClassName(@"WKScrollView")]
       assertWithMatcher:grey_notNil()];
+  [[EarlGrey selectElementWithMatcher:grey_accessibilityLabel(@"Link to Next Test")] assertWithMatcher:grey_notNil()];
 }
 
 - (void)testJavascriptEvaluationWithAReturnValue {
